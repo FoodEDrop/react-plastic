@@ -1,0 +1,35 @@
+{
+  "name": "react-plastic",
+  "version": "0.1.0",
+  "main": "lib/js/src/index.bs.js",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -w",
+    "prepack": "NODE_ENV=prepack webpack"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": {
+    "name": "Steven Scaffidi",
+    "email": "sscaff1@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reason-react": ">=0.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "bs-platform": "^4.0.6",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^3.1.1"
+  }
+}
